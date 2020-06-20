@@ -26,15 +26,13 @@ void EntityDisplayApp::Update(float deltaTime) {
 
 }
 
-void EntityDisplayApp::Draw() 
-{
+void EntityDisplayApp::Draw() {
 	BeginDrawing();
 
 	ClearBackground(RAYWHITE);
 
 	// draw entities
-	for (auto& entity : m_entities) 
-	{
+	for (auto& entity : m_entities) {
 		DrawRectanglePro(
 			Rectangle{ entity.x, entity.y, entity.size, entity.size }, // rectangle
 			Vector2{ entity.size / 2, entity.size / 2 }, // origin

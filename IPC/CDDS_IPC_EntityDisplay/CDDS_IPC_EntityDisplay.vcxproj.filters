@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EntityDisplayApp.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mainDisplay.cpp">
+    <ClCompile Include="EntityDisplayApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,8 @@
 #include <iostream>
 #include <conio.h>
 
-struct MyData {
+struct MyData 
+{
 	int i;
 	float f;
 	char c;
@@ -12,12 +13,14 @@ struct MyData {
 	double d;
 };
 
-int main() {
+int main() 
+{
 
 	// gain access to a named shared memory block that already exists
 	HANDLE fileHandle = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, L"MySharedMemory");
 
-	if (fileHandle == nullptr) {
+	if (fileHandle == nullptr) 
+	{
 		std::cout << "Could not create file mapping object: " << GetLastError() << std::endl;
 		return 1;
 	}
@@ -25,7 +28,8 @@ int main() {
 	// map the memory from the shared block to a pointer we can manipulate
 	MyData* data = (MyData*)MapViewOfFile(fileHandle, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(MyData));
 
-	if (data == nullptr) {
+	if (data == nullptr)
+	{
 		std::cout << "Could not map view of file: " << GetLastError() << std::endl;
 		CloseHandle(fileHandle);
 		return 1;
