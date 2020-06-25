@@ -18,12 +18,15 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EntityEditorApp.cpp">
+    <ClCompile Include="EntityDisplayApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EntityEditorApp.h">
+    <ClInclude Include="EntityDisplayApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fixWindows.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

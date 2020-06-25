@@ -4,8 +4,7 @@
 #include <windows.h>
 #include <conio.h>
 
-struct MyData 
-{
+struct MyData {
 	int i;
 	float f;
 	char c;
@@ -13,13 +12,9 @@ struct MyData
 	double d;
 };
 
-int main()
-{
+int main() {
 
-	MyData myData = 
-	{ 
-		99, 7.56f, 'A', true, 69.42
-	};
+	MyData myData = { 99, 7.56f, 'A', true, 69.42 };
 
 	// open a named shared memory block
 	HANDLE fileHandle = CreateFileMapping(INVALID_HANDLE_VALUE, // a handle to an existing virtual file, or invalid
@@ -28,8 +23,7 @@ int main()
 		0, sizeof(MyData), // size of the memory block, 
 		L"MySharedMemory");
 
-	if (fileHandle == nullptr) 
-	{
+	if (fileHandle == nullptr) {
 		std::cout << "Could not create file mapping object: " << GetLastError() << std::endl;
 		return 1;
 	}

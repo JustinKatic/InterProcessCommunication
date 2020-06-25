@@ -1,7 +1,11 @@
 #pragma once
 #include <vector>
+#include"fixWindows.h"
+#include<windows.h>
 
-struct Entity {
+
+struct Entity 
+{
 	float x = 0, y = 0;
 	float rotation = 0;
 	float speed = 0;
@@ -9,7 +13,8 @@ struct Entity {
 	float size = 1;
 };
 
-class EntityEditorApp {
+class EntityEditorApp 
+{
 public:
 	EntityEditorApp(int screenWidth = 800, int screenHeight = 450);
 	~EntityEditorApp();
@@ -20,7 +25,16 @@ public:
 	void Update(float deltaTime);
 	void Draw();
 
+
+	bool WriteToSharedMemory();
+
+
+
 protected:
+	//creates a handle mem variable
+	HANDLE m_filehandleData;
+	HANDLE m_filehandleSize;
+
 	int m_screenWidth;
 	int m_screenHeight;
 
