@@ -167,7 +167,7 @@ bool EntityEditorApp::WriteToSharedMemory()
 	//creates handle for entity data
 	unsigned char* data = (unsigned char*)MapViewOfFile(m_filehandleData, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity) * ENTITY_COUNT);
 
-	//magic
+	//casting char to entity pointer
 	Entity* entities = (Entity*)data;
 	data += sizeof(Entity) * ENTITY_COUNT;
 
