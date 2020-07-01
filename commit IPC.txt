@@ -1,0 +1,41 @@
+commit 2d5447a2652b6be34f088e3e7c2058e7f083191c
+Author: JustinKatic <60805792+JustinKatic@users.noreply.github.com>
+Date:   Wed Jul 1 07:27:30 2020 +1000
+
+    Update README.md
+
+commit 43804d401e182c0e7312dcf91050c504631794ee
+Author: Justin <justinkatic4@gmail.com>
+Date:   Fri Jun 26 15:30:08 2020 +1000
+
+    changed the magic comment
+
+commit a9db0e9aabc7e6f12a2f458bac9f9f87cbddb08c
+Author: Justin <justinkatic4@gmail.com>
+Date:   Thu Jun 25 10:34:56 2020 +1000
+
+    removed git ignore for this file due to raylib not sending through correctly
+
+commit ea0b24036bb84234e1a8503a41246f8de0074ffc
+Author: Justin <justinkatic4@gmail.com>
+Date:   Thu Jun 25 10:23:23 2020 +1000
+
+    ipc finished
+
+commit ad495cf97c2e4aa27ebbfad5c8d4eb22eaff0349
+Author: Katic44 <justinkatic4@gmail.com>
+Date:   Sat Jun 20 16:35:36 2020 +1000
+
+    no message
+
+commit 44084592e68394d30a2e68b23970473c3c88dda0
+Author: Katic44 <justinkatic4@gmail.com>
+Date:   Fri Jun 19 16:45:17 2020 +1000
+
+    initial commit starting project aswell as added tutorial projects in for refrence
+
+commit 2ec7896fcfd1dd789f519eb7d8a937dea2ed0def
+Author: JustinKatic <60805792+JustinKatic@users.noreply.github.com>
+Date:   Fri Jun 19 14:19:43 2020 +1000
+
+    Initial commit
